@@ -77,10 +77,14 @@ setInterval(()=>autoPlay(),4000);
 //---------------------mobile menu toggle-----------------------
 const $mobileMenu = document.querySelectorAll('#mobile_menu > li');
 $mobileMenu.forEach((e)=>{
-  e.addEventListener('click',()=>{
-    
+  e.addEventListener('click',(item)=>{
+    console.log(e);
+    // $mobileMenu.forEach((all)=>{
+    //   all.classList.remove('open');
+    // })
     e.classList.toggle('open');
   })
+  
 })
 
 
