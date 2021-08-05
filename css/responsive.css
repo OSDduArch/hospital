@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+@media (max-width:1600px){
+  #clinic ul {
+    width: 96%;
+    height: 50vw;
+  }
+}
+
+@media (max-width:1400px) {
+  #clinic ul {
+    height: 48vw;
+  }
+
+  #board {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #board .board1 {
+    grid-row: 1/3;
+  }
+
+  #floor p {
+    font-size: 40px;
+  }
+  
+  #floor h3 {
+    font-size: 23px;
+  }
+
+  #support ul li:first-child {
+    padding-right: 2%; 
+  }
+  
+  #footer .info ul:nth-child(2) li {
+    font-size: 14px;
+    padding-right: 15px;
+  }
+  
+  #footer .info p {
+    font-size: 11px;
+  }  
+}
+
+@media (max-width:1240px){
+
+  /* nav .nav_mobile{
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 280px;
+    z-index: 999;
+  } */ 
+
+  #support ul li:first-child {
+    font-size: 16px;
+    padding-right: 1.5%; 
+  }
+
+  #support ul li img{
+    width: 18vw;
+  }
+}
+
+@media (max-width:1024px){
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 888;
+    background-color: #fff;
+  }
+
+  header .logo_box {
+    /* box-sizing: border-box; */
+    /* padding: 2.5vw 0; */
+    padding: 15px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  header .logo_box a img{
+    width: auto;
+    height:38px;
+  }
+
+  #mobile_top .ham_button {
+    display: block;
+  }
+
+  #nav_menu {
+    display:none;
+  }
+
+  #clinic ul li > a > span {
+    font-size: 3vw;
+  }
+
+  /* #floor p {
+    font-size: 35px;
+  }
+  
+  #floor h3 {
+    font-size: 23px;
+  }
+
+  #floor a {} */
+
+  #support ul {
+    justify-content: center;
+    align-items: space-between;
+    flex-wrap: wrap;
+  }
+
+  #support ul li {
+    text-align: center;
+    width: 28%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #dbdbdb;
+  }
+
+  #support ul li:first-child {
+    font-size: 20px;
+    text-align: center;
+    padding: 0; 
+    border: none;
+    width: 100%;
+  }
+
+}
+
+@media (max-width:976px){
+
+  #banner .slideBtn {
+    bottom: 30%;
+  }
+
+  #banner .slider {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 70%;
+  }
+  
+  #banner .bannerText{
+    bottom: 70%;
+  }
+
+  #banner .bannerText dt {
+    font-size: 5vw;
+  }
+
+  #banner .bannerText dt p {
+    margin-top: 2vw;
+    font-size: 2.8vw;
+  }
+
+  #clinic {
+    padding: 7vw 0;
+  }
+
+  #clinic ul{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 81.97vw;
+    height: 143.44vw;
+  }
+
+  #board {
+    padding: 6vw 0;
+  }
+
+  :root {
+    --fontSizeTit: 3.7vw;
+    --boardListSize: 2.5vw;
+    --boardTelephonSize: 5vw;
+  }
+
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer .info ul {
+    justify-content: center;
+  }
+
+  #footer .info ul:first-child {
+    margin-bottom: 20px;
+  }
+  #footer .info ul:first-child li {
+    line-height: 25px;
+  } 
+
+  #footer .info ul:first-child li a {
+    font-size: 14px;
+  }
+
+  #footer .info ul:nth-child(2) li {
+    font-size: 13px;
+  }
+
+  #footer .info p {
+    text-align: center;
+  }
+
+}
+
+@media (max-width:840px){
+  :root {
+    --fontSizeTit: 3vw;
+    --boardListSize: 2vw;
+    --boardTelephoneSize: 4vw;
+  }
+
+  #clinic ul{
+    width: 92vw;
+    height: 160vw;
+  }
+
+  #floor p {
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+  
+  #floor h3 {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  #floor a {
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    padding: 9px 25px;
+    margin-top: 24px;
+  }
+
+  #support ul li {
+    width: 39%;
+  }
+
+  #support ul li img{
+    width: 100%;
+  }
+}
+@media (max-width:768px){}
+@media (max-width:640px){}
+@media (max-width:568px){}
+
+@media (max-width:480px){
+  #board {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  #board .board_wrap:nth-child(1),
+  #board .board_wrap:nth-child(2) {
+    margin-bottom: 15px;
+  }
+
+  #board .board1 ul li {
+    margin-top: 12px;
+  }
+
+  #floor a {
+    padding: 7px 20px;
+    margin-top: 16px;
+  }
+
+  #footer h1 img {
+    width: 60%;
+  }
+
+  #footer .info ul:first-child li a {
+    font-size: 13px;
+  }
+
+  #footer .info ul:nth-child(2) li {
+    font-size: 11px;
+  }
+
+  #footer .info p {
+    font-size: 8px;
+  }
+}
+@media (max-width:336px){}
+
