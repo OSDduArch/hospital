@@ -96,6 +96,9 @@ $mobile_ham.addEventListener('click', ()=>{
   // } else {
   //   document.body.style.overflow = '';
   // }
+  $mobileMenu.forEach((all)=>{
+    all.classList.remove('open');
+  })
   setTimeout(()=>{
     $mobileBar.classList.toggle('draw');
     $overlay.classList.toggle('draw');
