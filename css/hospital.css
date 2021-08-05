@@ -59,7 +59,7 @@ header .logo_box a img{
   position: fixed;
   right: -280px;
   top: 0;
-  height: 100vh;
+  height: 100%;
   background-color: #fff;
   z-index: 999;
   transition: all .5s;
@@ -67,7 +67,7 @@ header .logo_box a img{
 
 #nav_mobile.draw {
   right: 0;
-  overflow-y: scroll;
+  
 }
 
 #mobile_top {
@@ -163,7 +163,9 @@ header .logo_box a img{
 }
 
 #mobile_menu {
-  background-color: #fff;
+  z-index: 999;
+  /* background-color: #fff; */
+  height: 100%;
   overflow-y: scroll;
 }
 
