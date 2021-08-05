@@ -72,18 +72,17 @@ const autoPlay = () => {
   };
 };
 
+setInterval(()=>autoPlay(),4000);
+
 //---------------------mobile menu toggle-----------------------
 const $mobileMenu = document.querySelectorAll('#mobile_menu > li');
 $mobileMenu.forEach((e)=>{
   e.addEventListener('click',()=>{
-    // console.log(e);
-    // for (let i=0;i<$mobileMenu.length;i++){
-    //   $mobileMenu[i].classList.remove('open');
-    // }
+    
     e.classList.toggle('open');
   })
 })
-let slide = setInterval(()=>autoPlay(),4000);
+
 
 const $mobileBar = document.querySelector('#nav_mobile');
 const $mobile_ham = document.querySelector('.ham_button');
@@ -103,14 +102,15 @@ $mobile_ham.addEventListener('click', ()=>{
   },300);
 });
 
-$overlay.addEventListener('click',(e)=>{
-  // console.log(e.currentTarget);
-  if(e.currentTarget){
-    $mobile_ham.classList.remove('draw');
-    $mobileBar.classList.remove('draw');
-    $overlay.classList.remove('draw');
-    document.body.classList.remove('draw');
-  }
+$overlay.addEventListener('click',()=>{
+  $mobileMenu.forEach((all)=>{
+    all.classList.remove('open');
+  })
+  $mobile_ham.classList.remove('draw');
+  $mobileBar.classList.remove('draw');
+  $overlay.classList.remove('draw');
+  document.body.classList.remove('draw');
+
 })
 
 //-------------------scroll effect------------------
